@@ -1,12 +1,4 @@
 /* Стили для index.html */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 :root {
   --primary-text-color: #2f303a;
   --title-text-color: #212121;
@@ -15,7 +7,6 @@ html {
   --complementary-text: #757575;
 }
 body {
-  background-color: #e5e5e5;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
@@ -27,11 +18,12 @@ a {
 .list {
   list-style: none;
 }
-.list .work-mail:hover,
-.list .work-mail:focus {
+.work-mail:hover,
+.work-mail:focus {
   color: var(--accent-color);
 }
 .work-mail {
+  letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -40,18 +32,19 @@ a {
 .sait-nav .link-nav {
   color: var(--title-text-color);
 }
+.sait-nav .link-nav:hover,
+.sait-nav .link-nav:focus {
+  color: var(--accent-color);
+}
 .sait-nav {
+  letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
-.sait-nav .link-nav.current:hover,
-.sait-nav .link-nav.current:focus {
-  color: var(--accent-color);
-}
 .link {
-  width: 145px;
-  height: 31px;
+  letter-spacing: 0.03em;
+
   color: var(--accent-color);
 }
 .сompany-logo {
@@ -72,10 +65,9 @@ a {
 /* hero */
 .hero {
   background-color: var(--primary-text-color);
-  width: 1600px;
-  height: 600px;
 }
 .hero-title {
+  letter-spacing: 0.06em;
   color: var(--complementary-color);
   font-weight: 900;
   font-size: 44px;
@@ -84,6 +76,7 @@ a {
   text-transform: uppercase;
 }
 .button-clik {
+  letter-spacing: 0.06em;
   color: var(--complementary-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -93,20 +86,25 @@ a {
 }
 /* section */
 .text {
+  letter-spacing: 0.03em;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
 }
 .title {
+  letter-spacing: 0.03em;
   color: var(--complementary-text);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 .section-title-two {
+  letter-spacing: 0.03em;
+  font-weight: bold;
   color: var(--title-text-color);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
 }
 .image {
@@ -114,10 +112,14 @@ a {
   top: 1061px;
 }
 .section-title-name {
+  letter-spacing: 0.03em;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 .position {
+  letter-spacing: 0.03em;
+  font-weight: normal;
   color: var(--complementary-text);
   font-size: 16px;
   line-height: 1.2;
@@ -127,17 +129,16 @@ a {
   background-color: var(--primary-text-color);
 }
 .company-logo-white {
+  letter-spacing: 0.03em;
   color: var(--complementary-color);
-  width: 145px;
-  height: 31px;
   font-size: 26px;
 }
 .address {
+  letter-spacing: 0.03em;
   color: var(--complementary-color);
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 }
 .contact {
   color: rgba(255, 255, 255, 0.6);
@@ -166,15 +167,14 @@ ul {
 }
 /* Портфолио */
 .text-portfolio {
-  font-style: normal;
+  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 .text-filter {
   color: var(--complementary-text);
-  font-style: normal;
-  font-weight: normal;
+  letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.9;
 }
